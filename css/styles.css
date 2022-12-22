@@ -196,7 +196,7 @@ section {
 .logo:focus,
 .contact-link:hover,
 .contact-link:focus {
-  color: var(--color-interactive);
+  color: var(--color-active);
 }
 
 /*====================== Main Content ===================== */
