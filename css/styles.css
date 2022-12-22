@@ -166,7 +166,7 @@ section {
   bottom: -3px;
   background-color: var(--color-active);
   border-radius: 2px;
-  opacity: 0;
+  opacity: 1;
 
   transition: opacity var(--transition-dur-and-func);
 }
@@ -186,10 +186,6 @@ section {
 
 .contact-main .contact-item:not(:last-child) {
   margin-right: 40px;
-}
-.nav-link:focus::after,
-.nav-link:hover::after {
-  opacity: 1;
 }
 
 .nav-link:hover,
@@ -578,8 +574,8 @@ section {
 
   padding: 8px 16px;
   height: 48px;
+  border: none;
 
-  border: 1px solid #e7e9fc;
   border-radius: 4px;
   transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func);
@@ -608,17 +604,18 @@ section {
   border-radius: 5px;
 
   border: 0.5px solid #f4f4fd;
+}
+
+.portfolio-card-list {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: box-shadow var(--font-secondary);
 }
 
-.portfolio-card-list {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.portfolio-card:hover,
-.portfolio-card:focus {
+.portfolio-card-list:hover,
+.portfolio-card-list:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -679,7 +676,6 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100%;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
